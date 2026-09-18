@@ -20,7 +20,7 @@ function calculateLoyaltyPoints(order) {
 	if(order.total > 100){
 		points = points * 1.5;
 	}
-  return Math.floor(points);
+  return Math.round(points);
 }
 
 module.exports = { createOrder, applyDiscount, cancelOrder, calculateLoyaltyPoints };
